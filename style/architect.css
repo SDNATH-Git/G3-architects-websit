@@ -65,27 +65,113 @@
     margin-top: 20px;
     width: 100%;
   }
+  /* Main Sectiom */
+  main{
+    max-width: 1440px;
+    margin: 50px auto;
+  }
+  /* Quick list of Our Features start */
+  .teams-container{
+    display: flex;
+    align-items: center;
+  }
+  .teams-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    margin-left: 100px;
+  }
+  .teams-text{
+    padding-left: 50px;
+    padding-right: 80px;
+  }
+  .teams-title{
+    font-size: 2.6rem;
+  }
+  .title1{
+    color: #727272;
+    font-weight: 500;
+  }
+  .title2{
+    color: #131313;
+    font-weight: 700;
+  }
+  .title3{
+    color: #FF900E;
+    color: #FF900E;
+    font-weight: 700;  
+  }
+  .teams-description{
+    color:  #727272;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  /* Features you will love & enjoy */
+  .features-container{
+
+  }
+
+
+  /* Some Facts */
+  .Some-Facts{
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 550px;
+  }
+  .facts-title{
+    color:  #131313;
+    font-size: 2.6rem;
+    font-weight: 700;
+  }
+  .facts-descri{
+    color: #727272;
+   font-size: 1rem;
+   font-weight: 400;
+  }
+
+
+
+
+
+
+
+
 
 
   /* Responsive media query */ 
   /* Mobile Devices */
   @media screen and (max-width:576px) {
-    nav{
+    nav,.teams-container{
         flex-direction: column;
     }  
     header{
         padding: 20px;
     }
+    .teams-img{
+      grid-template-columns: 1fr;
+      margin: 0 auto;  
+    }
+    .teams-text{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
       
   }
   /* Tablets devices */
   @media screen and (min-width:576px) and (max-width:992px) {
-      nav{
+      nav,.teams-container{
         flex-direction: column;
       }
      header{
         padding: 50px;
      }
+     .teams-img{
+      margin: 0 auto;  
+    }
+    .teams-text{
+      padding-left: 80px;
+      padding-right: 80px;
+    }
   }
   
   
